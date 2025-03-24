@@ -9,7 +9,7 @@ import net.minecraft.world.phys.shapes.BooleanOp;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
-import vectorwing.farmersdelight.common.block.FeastBlock;
+import com.magafin.no_mans_delight.block.FeastBlock;
 
 import java.util.function.Supplier;
 

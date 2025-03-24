@@ -1,17 +1,25 @@
 package com.magafin.no_mans_delight;
 
+import com.magafin.no_mans_delight.block.VenisonRouladeBlock;
 import com.magafin.no_mans_delight.food_values.FoodValues;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.food.FoodProperties;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import vectorwing.farmersdelight.common.item.ConsumableItem;
 
+import java.util.function.Supplier;
+
 import static com.magafin.no_mans_delight.No_mans_delight.MODID;
+import static com.magafin.no_mans_delight.nmdRegBlock.BLOCKS;
+import static com.magafin.no_mans_delight.nmdRegBlock.VENISON_ROULADE_BLOCK;
 
 public class nmdReg {
     public static Item.Properties foodItem(FoodProperties food) {
@@ -23,7 +31,7 @@ public class nmdReg {
     public static Item.Properties bowlFoodItem(FoodProperties food) {
         return new Item.Properties().food(food).craftRemainder(Items.BOWL).stacksTo(16);
     }
-    public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(MODID);
+    public static final DeferredRegister.Blocks BLOCK = DeferredRegister.createBlocks(MODID);
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(MODID);
     public static final DeferredRegister<CreativeModeTab> CREATIVE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MODID);
     public static final DeferredRegister<EntityType<?>> ENTITIES = DeferredRegister.create(Registries.ENTITY_TYPE, MODID);
@@ -52,7 +60,9 @@ public class nmdReg {
             new ConsumableItem(foodItem(FoodValues.VENISON_MEDALLIONS), false));
     public static final DeferredItem<Item> COOKED_VENISON_MEDALLIONS = ITEMS.register("cooked_venison_medallions", registryName ->
             new ConsumableItem(foodItem(FoodValues.COOKED_VENISON_MEDALLIONS), false));
-    public static final DeferredItem<Item> VENISON_ROULADE = ITEMS.register("venison_roulade", registryName ->
+    public static final DeferredItem<Item> VENISON_ROULADE = ITEMS.register("plated_venison_roulade", registryName ->
             new ConsumableItem(foodItem(FoodValues.VENISON_ROULADE), true));
+    public static final DeferredItem<Item> VENISON_ROULADE_BLOCK_ITEM = ITEMS.register("venison_roulade_block",()->new BlockItem(VENISON_ROULADE_BLOCK.get(), new Item.Properties()));
 }
+
 

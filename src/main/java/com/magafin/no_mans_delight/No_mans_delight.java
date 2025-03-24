@@ -45,7 +45,7 @@ public class No_mans_delight {
     public No_mans_delight(IEventBus modEventBus, ModContainer modContainer) {
         modEventBus.addListener(this::commonSetup);
         ITEMS.register(modEventBus);
-
+        nmdRegBlock.init(modEventBus);
 
 
         // Register ourselves for server and other game events we are interested in.
