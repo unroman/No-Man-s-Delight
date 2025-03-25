@@ -49,5 +49,8 @@ public class FoodValues {
             .nutrition(1).saturationModifier(0.3f).build();
     public static final FoodProperties COOKED_VENISON_MEDALLIONS = (new FoodProperties.Builder())
             .nutrition(3).saturationModifier(0.6f).build();
+    public static final FoodProperties APPLE_MUFFIN_SLICE = (new FoodProperties.Builder())
+            .nutrition(8).saturationModifier(0.8f)
+            .effect(() -> new MobEffectInstance(ModEffects.COMFORT, SHORT_DURATION, 0), 1.0F).build();
 }
 

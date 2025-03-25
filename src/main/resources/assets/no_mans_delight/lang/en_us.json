@@ -12,5 +12,9 @@
   "item.no_mans_delight.horse_loin": "Horse Loin",
   "item.no_mans_delight.cooked_venison_medallions": "Cooked Venison Medallions",
   "item.no_mans_delight.venison_medallions": "Venison Medallions",
-  "item.no_mans_delight.venison_roulade": "Venison Roulade"
+  "item.no_mans_delight.plated_venison_roulade": "Plated Venison Roulade",
+  "item.no_mans_delight.apple_muffin_slice": "Apple Muffin Slice",
+
+  "block.no_mans_delight.venison_roulade_block": "Venison Roulade",
+  "block.no_mans_delight.apple_muffin": "Apple Muffin"
 }

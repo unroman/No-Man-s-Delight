@@ -1,5 +1,6 @@
 package com.magafin.no_mans_delight;
 
+import com.magafin.no_mans_delight.block.MuffinBlock;
 import com.magafin.no_mans_delight.block.VenisonRouladeBlock;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -17,6 +18,9 @@ import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
 import net.neoforged.neoforge.registries.NeoForgeRegistries;
 import vectorwing.farmersdelight.FarmersDelight;
+import vectorwing.farmersdelight.common.block.PieBlock;
+import vectorwing.farmersdelight.common.block.RoastChickenBlock;
+import vectorwing.farmersdelight.common.registry.ModItems;
 
 import java.util.function.Supplier;
 import java.util.function.ToIntFunction;
@@ -26,12 +30,14 @@ import static com.magafin.no_mans_delight.No_mans_delight.MODID;
 public class nmdRegBlock {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(Registries.BLOCK, No_mans_delight.MODID);
 
+    public static void init(IEventBus bus){
+        BLOCKS.register(bus);}
+
     private static ToIntFunction<BlockState> litBlockEmission(int lightValue) {
         return (state) -> state.getValue(BlockStateProperties.LIT) ? lightValue : 0;
     }
     public static final Supplier<Block> VENISON_ROULADE_BLOCK = BLOCKS.register("venison_roulade_block",
-            () -> new VenisonRouladeBlock(Block.Properties.ofFullCopy(Blocks.CAKE), nmdReg.VENISON_ROULADE, true));
-    public static void init(IEventBus bus){
-        BLOCKS.register(bus);
-    }
+            () -> new VenisonRouladeBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CAKE), nmdReg.VENISON_ROULADE, true));
+    public static final Supplier<Block> APPLE_MUFFIN = BLOCKS.register("apple_muffin",
+            () -> new MuffinBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CAKE), nmdReg.APPLE_MUFFIN_SLICE));
 }

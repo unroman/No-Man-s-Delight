@@ -18,8 +18,8 @@ import vectorwing.farmersdelight.common.item.ConsumableItem;
 import java.util.function.Supplier;
 
 import static com.magafin.no_mans_delight.No_mans_delight.MODID;
-import static com.magafin.no_mans_delight.nmdRegBlock.BLOCKS;
-import static com.magafin.no_mans_delight.nmdRegBlock.VENISON_ROULADE_BLOCK;
+import static com.magafin.no_mans_delight.nmdRegBlock.*;
+import static vectorwing.farmersdelight.common.registry.ModItems.basicItem;
 
 public class nmdReg {
     public static Item.Properties foodItem(FoodProperties food) {
@@ -62,7 +62,12 @@ public class nmdReg {
             new ConsumableItem(foodItem(FoodValues.COOKED_VENISON_MEDALLIONS), false));
     public static final DeferredItem<Item> VENISON_ROULADE = ITEMS.register("plated_venison_roulade", registryName ->
             new ConsumableItem(foodItem(FoodValues.VENISON_ROULADE), true));
-    public static final DeferredItem<Item> VENISON_ROULADE_BLOCK_ITEM = ITEMS.register("venison_roulade_block",()->new BlockItem(VENISON_ROULADE_BLOCK.get(), new Item.Properties()));
+    public static final DeferredItem<Item> VENISON_ROULADE_BLOCK_ITEM = ITEMS.register("venison_roulade_block",()->
+            new BlockItem((Block)nmdRegBlock.VENISON_ROULADE_BLOCK.get(), basicItem().stacksTo(1)));
+    public static final DeferredItem<Item> APPLE_MUFFIN_SLICE = ITEMS.register("apple_muffin_slice", registryName ->
+            new ConsumableItem(foodItem(FoodValues.APPLE_MUFFIN_SLICE), false));
+    public static final DeferredItem<Item> APPLE_MUFFIN_ITEM = ITEMS.register("apple_muffin_block",()->
+            new BlockItem((Block)nmdRegBlock.APPLE_MUFFIN.get(), basicItem().stacksTo(1)));
 }
 
 
