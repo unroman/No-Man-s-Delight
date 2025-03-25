@@ -1,27 +1,18 @@
-package com.magafin.no_mans_delight;
+package com.magafin.no_mans_delight.register;
 
-import com.magafin.no_mans_delight.block.VenisonRouladeBlock;
 import com.magafin.no_mans_delight.food_values.FoodValues;
-import net.minecraft.core.registries.Registries;
-import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import vectorwing.farmersdelight.common.item.ConsumableItem;
 
-import java.util.function.Supplier;
-
 import static com.magafin.no_mans_delight.No_mans_delight.MODID;
-import static com.magafin.no_mans_delight.nmdRegBlock.*;
 import static vectorwing.farmersdelight.common.registry.ModItems.basicItem;
 
-public class nmdReg {
+public class ItemReg {
     public static Item.Properties foodItem(FoodProperties food) {
         return new Item.Properties().food(food);
     }
@@ -60,11 +51,11 @@ public class nmdReg {
     public static final DeferredItem<Item> VENISON_ROULADE = ITEMS.register("plated_venison_roulade", registryName ->
             new ConsumableItem(foodItem(FoodValues.VENISON_ROULADE).craftRemainder(Items.BOWL), true));
     public static final DeferredItem<Item> VENISON_ROULADE_BLOCK_ITEM = ITEMS.register("venison_roulade_block",()->
-            new BlockItem(nmdRegBlock.VENISON_ROULADE_BLOCK.get(), basicItem().stacksTo(1)));
+            new BlockItem(BlockReg.VENISON_ROULADE_BLOCK.get(), basicItem().stacksTo(1)));
     public static final DeferredItem<Item> APPLE_MUFFIN_SLICE = ITEMS.register("apple_muffin_slice", registryName ->
             new ConsumableItem(foodItem(FoodValues.APPLE_MUFFIN_SLICE), false));
     public static final DeferredItem<Item> APPLE_MUFFIN_ITEM = ITEMS.register("apple_muffin_block",()->
-            new BlockItem(nmdRegBlock.APPLE_MUFFIN.get(), basicItem().stacksTo(1)));
+            new BlockItem(BlockReg.APPLE_MUFFIN.get(), basicItem().stacksTo(1)));
 }
 
 

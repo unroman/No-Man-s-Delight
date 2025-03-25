@@ -1,36 +1,21 @@
 package com.magafin.no_mans_delight;
 
 import com.mojang.logging.LogUtils;
-import net.minecraft.client.Minecraft;
-import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.core.registries.Registries;
-import net.minecraft.network.chat.Component;
-import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.item.*;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.material.MapColor;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.common.Mod;
-import net.neoforged.fml.config.ModConfig;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
-import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
-import net.neoforged.neoforge.registries.DeferredBlock;
-import net.neoforged.neoforge.registries.DeferredHolder;
-import net.neoforged.neoforge.registries.DeferredItem;
-import net.neoforged.neoforge.registries.DeferredRegister;
 import org.slf4j.Logger;
 
-import static com.magafin.no_mans_delight.nmdReg.ITEMS;
-import static com.magafin.no_mans_delight.nmdRegBlock.BLOCKS;
+import static com.magafin.no_mans_delight.register.ItemReg.ITEMS;
+import static com.magafin.no_mans_delight.register.BlockReg.BLOCKS;
+import static com.magafin.no_mans_delight.register.TabReg.TABS;
 
 @Mod(No_mans_delight.MODID)
 public class No_mans_delight {
@@ -41,6 +26,7 @@ public class No_mans_delight {
         modEventBus.addListener(this::commonSetup);
         ITEMS.register(modEventBus);
         BLOCKS.register(modEventBus);
+        TABS.register(modEventBus);
         NeoForge.EVENT_BUS.register(this);
 
     }
