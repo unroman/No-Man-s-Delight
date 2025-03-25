@@ -32,8 +32,6 @@ public class nmdReg {
         return new Item.Properties().food(food).craftRemainder(Items.BOWL).stacksTo(16);
     }
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(MODID);
-    public static final DeferredRegister<CreativeModeTab> CREATIVE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MODID);
-    public static final DeferredRegister<EntityType<?>> ENTITIES = DeferredRegister.create(Registries.ENTITY_TYPE, MODID);
 
     public static final DeferredItem<Item> STUFFED_VENISON = ITEMS.register("stuffed_venison", registryName ->
             new ConsumableItem(bowlFoodItem(FoodValues.STUFFED_VENISON), true));

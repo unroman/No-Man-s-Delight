@@ -37,7 +37,6 @@ public class VenisonRouladeBlock extends FeastBlock {
             return (Integer)state.getValue(SERVINGS) == 0 ? PLATE_SHAPE : ROAST_SHAPE;
     }
 
-
     static {
             ROAST_SHAPE = Shapes.joinUnoptimized(PLATE_SHAPE, Block.box(4.0, 2.0, 4.0, 12.0, 10.0, 12.0), BooleanOp.OR);
     }

@@ -30,12 +30,6 @@ import static com.magafin.no_mans_delight.No_mans_delight.MODID;
 public class nmdRegBlock {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(Registries.BLOCK, No_mans_delight.MODID);
 
-    public static void init(IEventBus bus){
-        BLOCKS.register(bus);}
-
-    private static ToIntFunction<BlockState> litBlockEmission(int lightValue) {
-        return (state) -> state.getValue(BlockStateProperties.LIT) ? lightValue : 0;
-    }
     public static final Supplier<Block> VENISON_ROULADE_BLOCK = BLOCKS.register("venison_roulade_block",
             () -> new VenisonRouladeBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CAKE), nmdReg.VENISON_ROULADE, true));
     public static final Supplier<Block> APPLE_MUFFIN = BLOCKS.register("apple_muffin",
