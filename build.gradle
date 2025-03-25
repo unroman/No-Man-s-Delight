@@ -101,7 +101,9 @@ sourceSets.main.resources { srcDir 'src/generated/resources' }
 dependencies{
     implementation ("curse.maven:farmers-delight-398521:6154807")
     implementation ("curse.maven:no-mans-land-538493:6304277")
-    implementation "curse.maven:biolith-852512:6161386"
+    implementation ("curse.maven:biolith-852512:6161386")
+    implementation ("curse.maven:jei-238222:5846880")
+    implementation ("curse.maven:appleskin-248787:5586600")
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.
