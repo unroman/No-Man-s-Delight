@@ -61,7 +61,7 @@ public class nmdReg {
     public static final DeferredItem<Item> COOKED_VENISON_MEDALLIONS = ITEMS.register("cooked_venison_medallions", registryName ->
             new ConsumableItem(foodItem(FoodValues.COOKED_VENISON_MEDALLIONS), false));
     public static final DeferredItem<Item> VENISON_ROULADE = ITEMS.register("plated_venison_roulade", registryName ->
-            new ConsumableItem(foodItem(FoodValues.VENISON_ROULADE), true));
+            new ConsumableItem(foodItem(FoodValues.VENISON_ROULADE).craftRemainder(Items.BOWL), true));
     public static final DeferredItem<Item> VENISON_ROULADE_BLOCK_ITEM = ITEMS.register("venison_roulade_block",()->
             new BlockItem((Block)nmdRegBlock.VENISON_ROULADE_BLOCK.get(), basicItem().stacksTo(1)));
     public static final DeferredItem<Item> APPLE_MUFFIN_SLICE = ITEMS.register("apple_muffin_slice", registryName ->

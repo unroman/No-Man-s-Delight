@@ -32,14 +32,11 @@ public class VenisonRouladeBlock extends FeastBlock {
             super(properties, servingItem, hasLeftovers);
 
     }
-
+    @Override
     public VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
             return (Integer)state.getValue(SERVINGS) == 0 ? PLATE_SHAPE : ROAST_SHAPE;
     }
 
-    public ItemInteractionResult useItemOn(ItemStack heldStack, BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit) {
-        return level.isClientSide && this.takeServing(level, pos, state, player, hand).consumesAction() ? ItemInteractionResult.SUCCESS : this.takeServing(level, pos, state, player, hand);
-    }
 
     static {
             ROAST_SHAPE = Shapes.joinUnoptimized(PLATE_SHAPE, Block.box(4.0, 2.0, 4.0, 12.0, 10.0, 12.0), BooleanOp.OR);
