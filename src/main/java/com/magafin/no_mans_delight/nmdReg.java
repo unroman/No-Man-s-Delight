@@ -31,7 +31,6 @@ public class nmdReg {
     public static Item.Properties bowlFoodItem(FoodProperties food) {
         return new Item.Properties().food(food).craftRemainder(Items.BOWL).stacksTo(16);
     }
-    public static final DeferredRegister.Blocks BLOCK = DeferredRegister.createBlocks(MODID);
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(MODID);
     public static final DeferredRegister<CreativeModeTab> CREATIVE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MODID);
     public static final DeferredRegister<EntityType<?>> ENTITIES = DeferredRegister.create(Registries.ENTITY_TYPE, MODID);
@@ -63,11 +62,11 @@ public class nmdReg {
     public static final DeferredItem<Item> VENISON_ROULADE = ITEMS.register("plated_venison_roulade", registryName ->
             new ConsumableItem(foodItem(FoodValues.VENISON_ROULADE).craftRemainder(Items.BOWL), true));
     public static final DeferredItem<Item> VENISON_ROULADE_BLOCK_ITEM = ITEMS.register("venison_roulade_block",()->
-            new BlockItem((Block)nmdRegBlock.VENISON_ROULADE_BLOCK.get(), basicItem().stacksTo(1)));
+            new BlockItem(nmdRegBlock.VENISON_ROULADE_BLOCK.get(), basicItem().stacksTo(1)));
     public static final DeferredItem<Item> APPLE_MUFFIN_SLICE = ITEMS.register("apple_muffin_slice", registryName ->
             new ConsumableItem(foodItem(FoodValues.APPLE_MUFFIN_SLICE), false));
     public static final DeferredItem<Item> APPLE_MUFFIN_ITEM = ITEMS.register("apple_muffin_block",()->
-            new BlockItem((Block)nmdRegBlock.APPLE_MUFFIN.get(), basicItem().stacksTo(1)));
+            new BlockItem(nmdRegBlock.APPLE_MUFFIN.get(), basicItem().stacksTo(1)));
 }
 
 
