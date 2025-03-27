@@ -44,13 +44,25 @@ public class FoodValues {
     public static final FoodProperties HORSE_LOIN = (new FoodProperties.Builder())
             .nutrition(2).saturationModifier(0.3f).build();
     public static final FoodProperties COOKED_HORSE_LOIN = (new FoodProperties.Builder())
-            .nutrition(5).saturationModifier(0.6f).build();
+            .nutrition(4).saturationModifier(0.6f).build();
     public static final FoodProperties VENISON_MEDALLIONS = (new FoodProperties.Builder())
             .nutrition(1).saturationModifier(0.3f).build();
     public static final FoodProperties COOKED_VENISON_MEDALLIONS = (new FoodProperties.Builder())
             .nutrition(3).saturationModifier(0.6f).build();
     public static final FoodProperties APPLE_MUFFIN_SLICE = (new FoodProperties.Builder())
-            .nutrition(8).saturationModifier(0.8f)
+            .nutrition(3).saturationModifier(0.8f)
+            .effect(() -> new MobEffectInstance(ModEffects.COMFORT, SHORT_DURATION, 0), 1.0F).build();
+    public static final FoodProperties PEAR_MUFFIN_SLICE = (new FoodProperties.Builder())
+            .nutrition(3).saturationModifier(0.8f)
+            .effect(() -> new MobEffectInstance(ModEffects.COMFORT, SHORT_DURATION, 0), 1.0F).build();
+    public static final FoodProperties SWEET_BERRY_MUFFIN_SLICE = (new FoodProperties.Builder())
+            .nutrition(3).saturationModifier(0.8f)
+            .effect(() -> new MobEffectInstance(ModEffects.COMFORT, SHORT_DURATION, 0), 1.0F).build();
+    public static final FoodProperties GLOW_BERRY_MUFFIN_SLICE = (new FoodProperties.Builder())
+            .nutrition(3).saturationModifier(0.8f)
+            .effect(() -> new MobEffectInstance(ModEffects.COMFORT, SHORT_DURATION, 0), 1.0F).build();
+    public static final FoodProperties WALNUT_MUFFIN_SLICE = (new FoodProperties.Builder())
+            .nutrition(3).saturationModifier(0.8f)
             .effect(() -> new MobEffectInstance(ModEffects.COMFORT, SHORT_DURATION, 0), 1.0F).build();
 }
 

@@ -56,6 +56,22 @@ public class ItemReg {
             new ConsumableItem(foodItem(FoodValues.APPLE_MUFFIN_SLICE), false));
     public static final DeferredItem<Item> APPLE_MUFFIN_ITEM = ITEMS.register("apple_muffin_block",()->
             new BlockItem(BlockReg.APPLE_MUFFIN.get(), basicItem().stacksTo(1)));
+    public static final DeferredItem<Item> PEAR_MUFFIN_SLICE = ITEMS.register("pear_muffin_slice", registryName ->
+            new ConsumableItem(foodItem(FoodValues.PEAR_MUFFIN_SLICE), false));
+    public static final DeferredItem<Item> PEAR_MUFFIN_ITEM = ITEMS.register("pear_muffin_block",()->
+            new BlockItem(BlockReg.PEAR_MUFFIN.get(), basicItem().stacksTo(1)));
+    public static final DeferredItem<Item> SWEET_BERRY_MUFFIN_SLICE = ITEMS.register("sweet_berry_muffin_slice", registryName ->
+            new ConsumableItem(foodItem(FoodValues.SWEET_BERRY_MUFFIN_SLICE), false));
+    public static final DeferredItem<Item> SWEET_BERRY_ITEM = ITEMS.register("sweet_berry_muffin_block",()->
+            new BlockItem(BlockReg.SWEET_BERRY_MUFFIN.get(), basicItem().stacksTo(1)));
+    public static final DeferredItem<Item> GLOW_BERRY_ITEM = ITEMS.register("glow_berry_muffin_block",()->
+            new BlockItem(BlockReg.GLOW_BERRY_MUFFIN.get(), basicItem().stacksTo(1)));
+    public static final DeferredItem<Item> GLOW_BERRY_MUFFIN_SLICE = ITEMS.register("glow_berry_muffin_slice", registryName ->
+            new ConsumableItem(foodItem(FoodValues.GLOW_BERRY_MUFFIN_SLICE), false));
+    public static final DeferredItem<Item> WALNUT_MUFFIN_ITEM = ITEMS.register("walnut_muffin_block",()->
+            new BlockItem(BlockReg.WALNUT_MUFFIN.get(), basicItem().stacksTo(1)));
+    public static final DeferredItem<Item> WALNUT_MUFFIN_SLICE = ITEMS.register("walnut_muffin_slice", registryName ->
+            new ConsumableItem(foodItem(FoodValues.WALNUT_MUFFIN_SLICE), false));
 }
 
 

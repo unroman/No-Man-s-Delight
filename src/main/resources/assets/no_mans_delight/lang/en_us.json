@@ -14,7 +14,17 @@
   "item.no_mans_delight.venison_medallions": "Venison Medallions",
   "item.no_mans_delight.plated_venison_roulade": "Plated Venison Roulade",
   "item.no_mans_delight.apple_muffin_slice": "Apple Muffin Slice",
+  "item.no_mans_delight.pear_muffin_slice": "Pear Muffin Slice",
+  "item.no_mans_delight.sweet_berry_muffin_slice": "Sweet Berry Muffin Slice",
+  "item.no_mans_delight.glow_berry_muffin_slice": "Glow Berry Muffin Slice",
+  "item.no_mans_delight.walnut_muffin_slice": "Walnut Muffin Slice",
 
   "block.no_mans_delight.venison_roulade_block": "Venison Roulade",
-  "block.no_mans_delight.apple_muffin": "Apple Muffin"
+  "block.no_mans_delight.apple_muffin": "Apple Muffin",
+  "block.no_mans_delight.pear_muffin": "Pear Muffin",
+  "block.no_mans_delight.sweet_berry_muffin": "Sweet Berry Muffin",
+  "block.no_mans_delight.glow_berry_muffin": "Glow Berry Muffin",
+  "block.no_mans_delight.walnut_muffin": "Walnut Muffin",
+
+  "itemGroup.no_mans_delight.nmd_tab": "No Man's Delight"
 }

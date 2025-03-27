@@ -18,4 +18,12 @@ public class BlockReg {
             () -> new VenisonRouladeBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CAKE), ItemReg.VENISON_ROULADE, true));
     public static final Supplier<Block> APPLE_MUFFIN = BLOCKS.register("apple_muffin",
             () -> new MuffinBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CAKE), ItemReg.APPLE_MUFFIN_SLICE));
+    public static final Supplier<Block> PEAR_MUFFIN = BLOCKS.register("pear_muffin",
+            () -> new MuffinBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CAKE), ItemReg.PEAR_MUFFIN_SLICE));
+    public static final Supplier<Block> SWEET_BERRY_MUFFIN = BLOCKS.register("sweet_berry_muffin",
+            () -> new MuffinBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CAKE), ItemReg.SWEET_BERRY_MUFFIN_SLICE));
+    public static final Supplier<Block> GLOW_BERRY_MUFFIN = BLOCKS.register("glow_berry_muffin",
+            () -> new MuffinBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CAKE).lightLevel((light) ->  2), ItemReg.GLOW_BERRY_MUFFIN_SLICE));
+    public static final Supplier<Block> WALNUT_MUFFIN = BLOCKS.register("walnut_muffin",
+            () -> new MuffinBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CAKE).lightLevel((light) ->  2), ItemReg.WALNUT_MUFFIN_SLICE));
 }
