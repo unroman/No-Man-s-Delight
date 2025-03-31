@@ -1,0 +1,10 @@
+{
+  "parent": "no_mans_delight:block/large_pie_slice4",
+  "textures": {
+    "particle": "no_mans_delight:block/mushroom_large_pie_top",
+    "bottom": "no_mans_delight:block/large_pie_bottom",
+    "side": "no_mans_delight:block/large_pie_side",
+    "top": "no_mans_delight:block/mushroom_large_pie_top",
+    "inner": "no_mans_delight:block/mushroom_large_pie_inner"
+  }
+}

@@ -1,7 +1,9 @@
 package com.magafin.no_mans_delight.register;
 
 import com.magafin.no_mans_delight.No_mans_delight;
+import com.magafin.no_mans_delight.block.LargePieBlock;
 import com.magafin.no_mans_delight.block.MuffinBlock;
+import com.magafin.no_mans_delight.block.NmdPizzaBlock;
 import com.magafin.no_mans_delight.block.VenisonRouladeBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.minecraft.core.registries.Registries;
@@ -26,4 +28,12 @@ public class BlockReg {
             () -> new MuffinBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CAKE).lightLevel((light) ->  2), ItemReg.GLOW_BERRY_MUFFIN_SLICE));
     public static final Supplier<Block> WALNUT_MUFFIN = BLOCKS.register("walnut_muffin",
             () -> new MuffinBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CAKE).lightLevel((light) ->  2), ItemReg.WALNUT_MUFFIN_SLICE));
+    public static final Supplier<Block> HUNTERS_PIZZA = BLOCKS.register("hunters_pizza",
+            () -> new NmdPizzaBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CAKE), ItemReg.HUNTERS_PIZZA_SLICE));
+    public static final Supplier<Block> VEGETABLE_PIZZA = BLOCKS.register("vegetable_pizza",
+            () -> new NmdPizzaBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CAKE), ItemReg.VEGETABLE_PIZZA_SLICE));
+    public static final Supplier<Block> CHEESE_PIZZA = BLOCKS.register("cheese_pizza",
+            () -> new NmdPizzaBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CAKE), ItemReg.CHEESE_PIZZA_SLICE));
+    public static final Supplier<Block> MUSHROOM_LARGE_PIE = BLOCKS.register("mushroom_large_pie",
+            () -> new LargePieBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CAKE), ItemReg.MUSHROOM_LARGE_PIE_SLICE));
 }

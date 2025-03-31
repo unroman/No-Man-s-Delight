@@ -72,6 +72,24 @@ public class ItemReg {
             new BlockItem(BlockReg.WALNUT_MUFFIN.get(), basicItem().stacksTo(1)));
     public static final DeferredItem<Item> WALNUT_MUFFIN_SLICE = ITEMS.register("walnut_muffin_slice", registryName ->
             new ConsumableItem(foodItem(FoodValues.WALNUT_MUFFIN_SLICE), false));
+    public static final DeferredItem<Item> HUNTERS_PIZZA_SLICE = ITEMS.register("hunters_pizza_slice", registryName ->
+            new ConsumableItem(foodItem(FoodValues.HUNTERS_PIZZA_SLICE), true));
+    public static final DeferredItem<Item> HUNTERS_PIZZA_ITEM = ITEMS.register("hunters_pizza_block",()->
+            new BlockItem(BlockReg.HUNTERS_PIZZA.get(), basicItem().stacksTo(1)));
+    public static final DeferredItem<Item> VEGETABLE_PIZZA_SLICE = ITEMS.register("vegetable_pizza_slice", registryName ->
+            new ConsumableItem(foodItem(FoodValues.VEGETABLE_PIZZA_SLICE), true));
+    public static final DeferredItem<Item> VEGETABLE_PIZZA_ITEM = ITEMS.register("vegetable_pizza_block",()->
+            new BlockItem(BlockReg.VEGETABLE_PIZZA.get(), basicItem().stacksTo(1)));
+    public static final DeferredItem<Item> NO_MANS_POT = ITEMS.register("no_mans_pot", registryName ->
+            new Item(foodItem(FoodValues.PEAR_MUFFIN_SLICE).stacksTo(1)));
+    public static final DeferredItem<Item> CHEESE_PIZZA_SLICE = ITEMS.register("cheese_pizza_slice", registryName ->
+            new ConsumableItem(foodItem(FoodValues.CHEESE_PIZZA_SLICE), true));
+    public static final DeferredItem<Item> CHEESE_PIZZA_ITEM = ITEMS.register("cheese_pizza_block",()->
+            new BlockItem(BlockReg.CHEESE_PIZZA.get(), basicItem().stacksTo(1)));
+    public static final DeferredItem<Item> MUSHROOM_LARGE_PIE_SLICE = ITEMS.register("mushroom_large_pie_slice", registryName ->
+            new ConsumableItem(foodItem(FoodValues.MUSHROOM_LARGE_PIE_SLICE), true));
+    public static final DeferredItem<Item> MUSHROOM_LARGE_PIE_ITEM = ITEMS.register("mushroom_large_pie_block",()->
+            new BlockItem(BlockReg.MUSHROOM_LARGE_PIE.get(), basicItem().stacksTo(1)));
 }
 
 

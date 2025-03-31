@@ -1,0 +1,10 @@
+{
+  "parent": "no_mans_delight:block/pizza_slice1",
+  "textures": {
+    "particle": "no_mans_delight:block/cheese_pizza_top",
+    "bottom": "no_mans_delight:block/pizza_bottom",
+    "side": "no_mans_delight:block/pizza_side",
+    "top": "no_mans_delight:block/cheese_pizza_top",
+    "inner": "no_mans_delight:block/cheese_pizza_inner"
+  }
+}

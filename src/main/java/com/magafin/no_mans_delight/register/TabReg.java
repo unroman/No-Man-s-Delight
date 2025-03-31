@@ -12,12 +12,16 @@ import static com.magafin.no_mans_delight.No_mans_delight.MODID;
 
 public class TabReg {
     public static final DeferredRegister<CreativeModeTab> TABS = DeferredRegister.create( Registries.CREATIVE_MODE_TAB,MODID);
-    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> NMD_TAB = TABS.register("nmd_tab", () -> CreativeModeTab.builder().icon(() -> ItemReg.APPLE_MUFFIN_ITEM.get().getDefaultInstance()).displayItems((parameters, output) -> {
+    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> NMD_TAB = TABS.register("nmd_tab", () -> CreativeModeTab.builder().icon(() -> ItemReg.NO_MANS_POT.get().getDefaultInstance()).displayItems((parameters, output) -> {
+        output.accept(ItemReg.MUSHROOM_LARGE_PIE_ITEM.get());
         output.accept(ItemReg.APPLE_MUFFIN_ITEM.get());
         output.accept(ItemReg.PEAR_MUFFIN_ITEM.get());
         output.accept(ItemReg.SWEET_BERRY_ITEM.get());
         output.accept(ItemReg.GLOW_BERRY_ITEM.get());
         output.accept(ItemReg.WALNUT_MUFFIN_ITEM.get());
+        output.accept(ItemReg.HUNTERS_PIZZA_ITEM.get());
+        output.accept(ItemReg.VEGETABLE_PIZZA_ITEM.get());
+        output.accept(ItemReg.CHEESE_PIZZA_ITEM.get());
         output.accept(ItemReg.VENISON_MEDALLIONS.get());
         output.accept(ItemReg.COOKED_VENISON_MEDALLIONS.get());
         output.accept(ItemReg.HORSE_LOIN.get());
