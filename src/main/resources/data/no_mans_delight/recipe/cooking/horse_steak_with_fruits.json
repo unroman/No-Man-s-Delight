@@ -1,0 +1,23 @@
+{
+  "type": "farmersdelight:cooking",
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "tag": "c:foods/raw_horse"
+    },
+    {
+      "item": "nomansland:pear"
+    },
+    {
+      "item": "minecraft:sweet_berries"
+    },
+    {
+      "item": "nomansland:maple_syrup_bottle"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "count": 1,
+    "id": "no_mans_delight:horse_steak_with_fruits"
+  }
+}

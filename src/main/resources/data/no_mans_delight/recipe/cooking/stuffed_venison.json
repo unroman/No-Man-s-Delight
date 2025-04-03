@@ -1,0 +1,20 @@
+{
+  "type": "farmersdelight:cooking",
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "tag": "c:foods/raw_venison"
+    },
+    {
+      "item": "minecraft:potato"
+    },
+    {
+      "item": "nomansland:walnuts"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "count": 1,
+    "id": "no_mans_delight:stuffed_venison"
+  }
+}

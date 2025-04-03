@@ -28,7 +28,7 @@ public class FoodValues {
             .effect(() -> new MobEffectInstance(ModEffects.COMFORT, SHORT_DURATION, 0), 1.0F).build();
     public static final FoodProperties MUSHROOMS_WITH_TOMATO = (new FoodProperties.Builder())
             .nutrition(12).saturationModifier(0.8f)
-            .effect(() -> new MobEffectInstance(ModEffects.NOURISHMENT, LONG_DURATION, 0), 1.0F).build();
+            .effect(() -> new MobEffectInstance(ModEffects.NOURISHMENT, MEDIUM_DURATION, 0), 1.0F).build();
     public static final FoodProperties SWEET_FROG_LEGS = (new FoodProperties.Builder())
             .nutrition(12).saturationModifier(0.8f)
             .effect(() -> new MobEffectInstance(ModEffects.COMFORT, MEDIUM_DURATION, 0), 1.0F).build();
@@ -51,31 +51,31 @@ public class FoodValues {
     public static final FoodProperties COOKED_VENISON_MEDALLIONS = (new FoodProperties.Builder())
             .nutrition(3).saturationModifier(0.6f).build();
     public static final FoodProperties APPLE_MUFFIN_SLICE = (new FoodProperties.Builder())
-            .nutrition(3).saturationModifier(0.8f)
+            .nutrition(2).saturationModifier(0.8f)
             .effect(() -> new MobEffectInstance(ModEffects.COMFORT, SHORT_DURATION, 0), 1.0F).build();
     public static final FoodProperties PEAR_MUFFIN_SLICE = (new FoodProperties.Builder())
-            .nutrition(3).saturationModifier(0.8f)
+            .nutrition(2).saturationModifier(0.8f)
             .effect(() -> new MobEffectInstance(ModEffects.COMFORT, SHORT_DURATION, 0), 1.0F).build();
     public static final FoodProperties SWEET_BERRY_MUFFIN_SLICE = (new FoodProperties.Builder())
-            .nutrition(3).saturationModifier(0.8f)
+            .nutrition(2).saturationModifier(0.8f)
             .effect(() -> new MobEffectInstance(ModEffects.COMFORT, SHORT_DURATION, 0), 1.0F).build();
     public static final FoodProperties GLOW_BERRY_MUFFIN_SLICE = (new FoodProperties.Builder())
-            .nutrition(3).saturationModifier(0.8f)
+            .nutrition(2).saturationModifier(0.8f)
             .effect(() -> new MobEffectInstance(ModEffects.COMFORT, SHORT_DURATION, 0), 1.0F).build();
     public static final FoodProperties WALNUT_MUFFIN_SLICE = (new FoodProperties.Builder())
-            .nutrition(3).saturationModifier(0.8f)
+            .nutrition(2).saturationModifier(0.8f)
             .effect(() -> new MobEffectInstance(ModEffects.COMFORT, SHORT_DURATION, 0), 1.0F).build();
     public static final FoodProperties HUNTERS_PIZZA_SLICE = (new FoodProperties.Builder())
-            .nutrition(4).saturationModifier(0.8f)
+            .nutrition(2).saturationModifier(0.8f)
             .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_BOOST, BRIEF_DURATION, 0), 1.0F).build();
     public static final FoodProperties VEGETABLE_PIZZA_SLICE = (new FoodProperties.Builder())
-            .nutrition(4).saturationModifier(0.8f)
+            .nutrition(2).saturationModifier(0.8f)
             .effect(() -> new MobEffectInstance(MobEffects.REGENERATION, BRIEF_DURATION, 0), 1.0F).build();
     public static final FoodProperties CHEESE_PIZZA_SLICE = (new FoodProperties.Builder())
-            .nutrition(4).saturationModifier(0.8f)
+            .nutrition(2).saturationModifier(0.8f)
             .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, BRIEF_DURATION, 0), 1.0F).build();
     public static final FoodProperties MUSHROOM_LARGE_PIE_SLICE = (new FoodProperties.Builder())
-            .nutrition(6).saturationModifier(0.6f)
+            .nutrition(4).saturationModifier(0.3f)
             .effect(() -> new MobEffectInstance(ModEffects.NOURISHMENT, BRIEF_DURATION, 0), 1.0F).build();
 }
 

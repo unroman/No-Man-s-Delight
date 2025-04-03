@@ -6,5 +6,6 @@
     "side": "no_mans_delight:block/large_pie_side",
     "top": "no_mans_delight:block/mushroom_large_pie_top",
     "inner": "no_mans_delight:block/mushroom_large_pie_inner"
-  }
+  },
+  "render_type": "cutout"
 }

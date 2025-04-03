@@ -1,0 +1,16 @@
+{
+  "type": "farmersdelight:pastry_slicing",
+  "conditions": [
+    {
+      "condition": "minecraft:match_tool",
+      "predicate": {
+        "items": "#farmersdelight:tools/knives"
+      }
+    },
+    {
+      "condition": "minecraft:block_state_property",
+      "block": "no_mans_delight:sweet_berry_muffin"
+    }
+  ],
+  "slice": "no_mans_delight:sweet_berry_muffin_slice"
+}

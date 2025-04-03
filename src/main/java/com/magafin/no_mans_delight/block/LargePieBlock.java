@@ -54,7 +54,6 @@ public class LargePieBlock extends Block {
     public int getMaxBites() {
         return 8;
     }
-
     public VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
         return SHAPE;
     }
@@ -151,7 +150,7 @@ public class LargePieBlock extends Block {
 
     static {
         FACING = BlockStateProperties.HORIZONTAL_FACING;
-        BITES = IntegerProperty.create("bites", 0, 3);
+        BITES = IntegerProperty.create("bites", 0, 7);
         SHAPE = Block.box(0.0, 0.0, 0.0, 16.0, 8.0, 16.0);
     }
 }

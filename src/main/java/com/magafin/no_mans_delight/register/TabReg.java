@@ -1,6 +1,11 @@
 package com.magafin.no_mans_delight.register;
 
+import com.farcr.nomansland.NoMansLand;
+import com.farcr.nomansland.common.registry.items.NMLCreativeTabs;
+import com.magafin.no_mans_delight.No_mans_delight;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
@@ -12,7 +17,7 @@ import static com.magafin.no_mans_delight.No_mans_delight.MODID;
 
 public class TabReg {
     public static final DeferredRegister<CreativeModeTab> TABS = DeferredRegister.create( Registries.CREATIVE_MODE_TAB,MODID);
-    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> NMD_TAB = TABS.register("nmd_tab", () -> CreativeModeTab.builder().icon(() -> ItemReg.NO_MANS_POT.get().getDefaultInstance()).displayItems((parameters, output) -> {
+    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> NMD_TAB = TABS.register("no_mans_delight", () -> CreativeModeTab.builder().withTabsAfter(ResourceLocation.fromNamespaceAndPath(NoMansLand.MODID, "nomansdasdland")).title(Component.translatable("itemGroup." + MODID + ".no_mans_delight")).icon(() -> ItemReg.NO_MANS_POT.get().getDefaultInstance()).displayItems((parameters, output) -> {
         output.accept(ItemReg.MUSHROOM_LARGE_PIE_ITEM.get());
         output.accept(ItemReg.APPLE_MUFFIN_ITEM.get());
         output.accept(ItemReg.PEAR_MUFFIN_ITEM.get());
