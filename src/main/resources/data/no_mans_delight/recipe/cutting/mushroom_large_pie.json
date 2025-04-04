@@ -1,0 +1,19 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "no_mans_delight:mushroom_large_pie_block"
+    }
+  ],
+  "result": [
+    {
+      "item": {
+        "count": 8,
+        "id": "no_mans_delight:mushroom_large_pie_slice"
+      }
+    }
+  ],
+  "tool": {
+    "tag": "c:tools/knife"
+  }
+}

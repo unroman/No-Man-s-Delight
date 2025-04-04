@@ -53,25 +53,25 @@ public class ItemReg {
     public static final DeferredItem<Item> VENISON_ROULADE_BLOCK_ITEM = ITEMS.register("venison_roulade_block",()->
             new BlockItem(BlockReg.VENISON_ROULADE_BLOCK.get(), basicItem().stacksTo(1)));
     public static final DeferredItem<Item> APPLE_MUFFIN_SLICE = ITEMS.register("apple_muffin_slice", registryName ->
-            new ConsumableItem(foodItem(FoodValues.APPLE_MUFFIN_SLICE), false));
+            new ConsumableItem(foodItem(FoodValues.APPLE_MUFFIN_SLICE), true));
     public static final DeferredItem<Item> APPLE_MUFFIN_ITEM = ITEMS.register("apple_muffin_block",()->
             new BlockItem(BlockReg.APPLE_MUFFIN.get(), basicItem().stacksTo(1)));
     public static final DeferredItem<Item> PEAR_MUFFIN_SLICE = ITEMS.register("pear_muffin_slice", registryName ->
-            new ConsumableItem(foodItem(FoodValues.PEAR_MUFFIN_SLICE), false));
+            new ConsumableItem(foodItem(FoodValues.PEAR_MUFFIN_SLICE), true));
     public static final DeferredItem<Item> PEAR_MUFFIN_ITEM = ITEMS.register("pear_muffin_block",()->
             new BlockItem(BlockReg.PEAR_MUFFIN.get(), basicItem().stacksTo(1)));
     public static final DeferredItem<Item> SWEET_BERRY_MUFFIN_SLICE = ITEMS.register("sweet_berry_muffin_slice", registryName ->
-            new ConsumableItem(foodItem(FoodValues.SWEET_BERRY_MUFFIN_SLICE), false));
+            new ConsumableItem(foodItem(FoodValues.SWEET_BERRY_MUFFIN_SLICE), true));
     public static final DeferredItem<Item> SWEET_BERRY_ITEM = ITEMS.register("sweet_berry_muffin_block",()->
             new BlockItem(BlockReg.SWEET_BERRY_MUFFIN.get(), basicItem().stacksTo(1)));
     public static final DeferredItem<Item> GLOW_BERRY_ITEM = ITEMS.register("glow_berry_muffin_block",()->
             new BlockItem(BlockReg.GLOW_BERRY_MUFFIN.get(), basicItem().stacksTo(1)));
     public static final DeferredItem<Item> GLOW_BERRY_MUFFIN_SLICE = ITEMS.register("glow_berry_muffin_slice", registryName ->
-            new ConsumableItem(foodItem(FoodValues.GLOW_BERRY_MUFFIN_SLICE), false));
+            new ConsumableItem(foodItem(FoodValues.GLOW_BERRY_MUFFIN_SLICE), true));
     public static final DeferredItem<Item> WALNUT_MUFFIN_ITEM = ITEMS.register("walnut_muffin_block",()->
             new BlockItem(BlockReg.WALNUT_MUFFIN.get(), basicItem().stacksTo(1)));
     public static final DeferredItem<Item> WALNUT_MUFFIN_SLICE = ITEMS.register("walnut_muffin_slice", registryName ->
-            new ConsumableItem(foodItem(FoodValues.WALNUT_MUFFIN_SLICE), false));
+            new ConsumableItem(foodItem(FoodValues.WALNUT_MUFFIN_SLICE), true));
     public static final DeferredItem<Item> HUNTERS_PIZZA_SLICE = ITEMS.register("hunters_pizza_slice", registryName ->
             new ConsumableItem(foodItem(FoodValues.HUNTERS_PIZZA_SLICE), true));
     public static final DeferredItem<Item> HUNTERS_PIZZA_ITEM = ITEMS.register("hunters_pizza_block",()->
