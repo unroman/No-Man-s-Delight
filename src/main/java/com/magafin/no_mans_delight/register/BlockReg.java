@@ -35,5 +35,5 @@ public class BlockReg {
     public static final Supplier<Block> CHEESE_PIZZA = BLOCKS.register("cheese_pizza",
             () -> new NmdPizzaBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CAKE), ItemReg.CHEESE_PIZZA_SLICE));
     public static final Supplier<Block> MUSHROOM_LARGE_PIE = BLOCKS.register("mushroom_large_pie",
-            () -> new LargePieBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CAKE).noOcclusion(), ItemReg.MUSHROOM_LARGE_PIE_SLICE));
+            () -> new LargePieBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CAKE).noOcclusion().requiresCorrectToolForDrops(), ItemReg.MUSHROOM_LARGE_PIE_SLICE));
 }
