@@ -1,9 +1,0 @@
-{
-  "parent": "no_mans_delight:block/muffin",
-  "textures": {
-    "particle": "no_mans_delight:block/walnut_muffin_top",
-    "bottom": "no_mans_delight:block/walnut_muffin_bottom",
-    "side": "no_mans_delight:block/walnut_muffin_side",
-    "top": "no_mans_delight:block/walnut_muffin_top"
-  }
-}
