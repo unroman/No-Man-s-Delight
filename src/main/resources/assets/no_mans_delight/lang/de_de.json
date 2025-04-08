@@ -1,0 +1,29 @@
+{
+  "itemGroup.no_mans_delight.no_mans_delight": "No Man's Delight",
+
+  "item.no_mans_delight.stuffed_venison": "Hirschragout",
+  "item.no_mans_delight.honey_glazed_billhook_bass": "Honigglasierter Hechtdorsch",
+  "item.no_mans_delight.horse_steak_with_fruits": "Pferdesteak mit Früchten",
+  "item.no_mans_delight.mushrooms_with_tomato": "Pilze mit Tomate",
+  "item.no_mans_delight.sweet_frog_legs": "Süße Froschschenkel",
+  "item.no_mans_delight.venison_tart": "Hirschtatar",
+  "item.no_mans_delight.shroomburger": "Pilzburger",
+  "item.no_mans_delight.horse_sandwich": "Pferdesandwich",
+  "item.no_mans_delight.cooked_horse_loin": "Gekochte Pferdelende",
+  "item.no_mans_delight.horse_loin": "Pferdelende",
+  "item.no_mans_delight.cooked_venison_medallions": "Gekochte Hirschmedaillons",
+  "item.no_mans_delight.venison_medallions": "Hirschmedaillons",
+  "item.no_mans_delight.venison_muscle": "Hirschmuskel",
+  "item.no_mans_delight.cooked_venison_muscle": "Gekochter Hirschmuskel",
+  "item.no_mans_delight.plated_venison_roulade": "Teller mit Hirschroulade",
+  "item.no_mans_delight.stuffed_shelf_mushroom": "Schüssel mit Gefülltem Stockschwamm",
+  "item.no_mans_delight.billhook_bass_slice": "Hechtdorschscheibe",
+  "item.no_mans_delight.cooked_billhook_bass_slice": "Gekochte Hechtdorschscheibe",
+  "item.no_mans_delight.billhook_bass_roll": "Hechtdorschrolle",
+  "item.no_mans_delight.walnut_cookie": "Walnusskeks",
+
+  "block.no_mans_delight.venison_roulade_block": "Hirschroulade",
+  "block.no_mans_delight.stuffed_shelf_mushroom_block": "Gefüllter Stockschwamm-Block",
+
+  "farmersdelight.jei.info.venison_muscle": "Ein großes Stück Fleisch von einem Hirsch.\n\nMan benötigt etwas Leichteres als ein Schwert, um es zu schneiden..."
+}

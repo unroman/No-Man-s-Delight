@@ -1,0 +1,29 @@
+{
+  "itemGroup.no_mans_delight.no_mans_delight": "Восторг Ничейных Земель",
+
+  "item.no_mans_delight.stuffed_venison": "Тушеная оленина",
+  "item.no_mans_delight.honey_glazed_billhook_bass": "Окунь-секач в медовой глазури",
+  "item.no_mans_delight.horse_steak_with_fruits": "Стейк из конины с фруктами",
+  "item.no_mans_delight.mushrooms_with_tomato": "Грибы в томатом соусе",
+  "item.no_mans_delight.sweet_frog_legs": "Лягушачьи лапки в кленовом сиропе",
+  "item.no_mans_delight.venison_tart": "Тартар из оленины",
+  "item.no_mans_delight.shroomburger": "Гриббургер",
+  "item.no_mans_delight.horse_sandwich": "Сэндвич с кониной",
+  "item.no_mans_delight.cooked_horse_loin": "Приготовленная лошадиная вырезка",
+  "item.no_mans_delight.horse_loin": "Сырая лошадиная вырезка",
+  "item.no_mans_delight.cooked_venison_medallions": "Приготовленные медальоны из оленины",
+  "item.no_mans_delight.venison_medallions": "Сырые медальоны из оленины",
+  "item.no_mans_delight.venison_muscle": "Оленьи мышцы",
+  "item.no_mans_delight.cooked_venison_muscle": "Приготовленные оленьи мышцы",
+  "item.no_mans_delight.plated_venison_roulade": "Тарелка рулета из оленины",
+  "item.no_mans_delight.stuffed_shelf_mushroom": "Тарелка фаршированного трутовика",
+  "item.no_mans_delight.billhook_bass_slice": "Ломтик сырого окуня-секача",
+  "item.no_mans_delight.cooked_billhook_bass_slice": "Ломтик жареного окуня-секача",
+  "item.no_mans_delight.billhook_bass_roll": "Ролл из окуня-секача",
+  "item.no_mans_delight.walnut_cookie": "Ореховое печенье",
+
+  "block.no_mans_delight.venison_roulade_block": "Рулет из оленины",
+  "block.no_mans_delight.stuffed_shelf_mushroom_block": "Фаршированный трутовик",
+
+  "farmersdelight.jei.info.venison_muscle": "Большой кусок мяса с оленя. Для разделки понадобится что-то полегче меча…"
+}

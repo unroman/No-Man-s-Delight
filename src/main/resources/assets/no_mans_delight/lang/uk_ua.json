@@ -1,0 +1,29 @@
+{
+  "itemGroup.no_mans_delight.no_mans_delight": "No Man's Delight",
+
+  "item.no_mans_delight.stuffed_venison": "Тушкована оленина",
+  "item.no_mans_delight.honey_glazed_billhook_bass": "Окунь-секач у медовій глазурі",
+  "item.no_mans_delight.horse_steak_with_fruits": "Стейк із конини з фруктами",
+  "item.no_mans_delight.mushrooms_with_tomato": "Гриби в томатному соусі",
+  "item.no_mans_delight.sweet_frog_legs": "Жаб'ячі лапки в кленовому сиропі",
+  "item.no_mans_delight.venison_tart": "Тартар з оленини",
+  "item.no_mans_delight.shroomburger": "Гриббургер",
+  "item.no_mans_delight.horse_sandwich": "Сендвіч з кониною",
+  "item.no_mans_delight.cooked_horse_loin": "Смажена кінська вирізка",
+  "item.no_mans_delight.horse_loin": "Сира кінська вирізка",
+  "item.no_mans_delight.cooked_venison_medallions": "Смажені медальйони з оленини",
+  "item.no_mans_delight.venison_medallions": "Сирі медальйони з оленини",
+  "item.no_mans_delight.venison_muscle": "Оленячі м'язи",
+  "item.no_mans_delight.cooked_venison_muscle": "Смажені оленячі м'язи",
+  "item.no_mans_delight.plated_venison_roulade": "Тарілка рулету з оленини",
+  "item.no_mans_delight.stuffed_shelf_mushroom": "Тарілка фаршированого трутовика",
+  "item.no_mans_delight.billhook_bass_slice": "Шматок сирого окуня-секача",
+  "item.no_mans_delight.cooked_billhook_bass_slice": "Смажений шматок окуня-секача",
+  "item.no_mans_delight.billhook_bass_roll": "Суші з окуня-секача",
+  "item.no_mans_delight.walnut_cookie": "Горіхове печиво",
+
+  "block.no_mans_delight.venison_roulade_block": "Рулет з оленини",
+  "block.no_mans_delight.stuffed_shelf_mushroom_block": "Фарширований трутовик",
+
+  "farmersdelight.jei.info.venison_muscle": "Великий шмат м'яса з оленя.\n\nВам знадобиться щось легше меча, щоб розрізати її..."
+}
