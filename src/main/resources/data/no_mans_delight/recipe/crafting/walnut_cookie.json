@@ -1,6 +1,6 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "category": "food",
+  "category": "misc",
   "ingredients": [
     {
       "item": "nomansland:walnuts"
@@ -13,7 +13,7 @@
     }
   ],
   "result": {
-    "count": 8,
+    "count": 2,
     "id": "no_mans_delight:walnut_cookie"
   }
 }
