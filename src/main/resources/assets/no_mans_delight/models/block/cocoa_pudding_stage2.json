@@ -1,0 +1,32 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"particle": "no_mans_delight:block/cocoa_pudding_side",
+		"side": "no_mans_delight:block/cocoa_pudding_side",
+		"bottom": "no_mans_delight:block/cocoa_pudding_bottom",
+		"top_inner": "no_mans_delight:block/cocoa_pudding_top_inner"
+	},
+	"elements": [
+		{
+			"from": [2, 0, 2],
+			"to": [14, 3, 14],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [2, 13, 14, 16], "texture": "#side"},
+				"east": {"uv": [2, 13, 14, 16], "texture": "#side"},
+				"south": {"uv": [2, 13, 14, 16], "texture": "#side"},
+				"west": {"uv": [2, 13, 14, 16], "texture": "#side"},
+				"up": {"uv": [2, 2, 14, 14], "texture": "#top_inner"},
+				"down": {"uv": [2, 2, 14, 14], "texture": "#bottom"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "cocoa_pudding",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [0]
+		}
+	]
+}
