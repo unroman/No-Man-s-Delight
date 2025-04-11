@@ -36,6 +36,8 @@ public class TabReg {
         output.accept(ItemReg.VENISON_ROULADE_BLOCK_ITEM.get());
         output.accept(ItemReg.STUFFED_SHELF_MUSHROOM.get());
         output.accept(ItemReg.STUFFED_SHELF_MUSHROOM_BLOCK_ITEM.get());
+        output.accept(ItemReg.COCOA_PUDDING.get());
+        output.accept(ItemReg.COCOA_PUDDING_BLOCK_ITEM.get());
         output.accept(ItemReg.HONEY_GLAZED_BILLHOOK_BASS.get());
         output.accept(ItemReg.HORSE_STEAK_WITH_FRUITS.get());
         output.accept(ItemReg.MUSHROOMS_WITH_TOMATO.get());

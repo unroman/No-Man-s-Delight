@@ -72,6 +72,10 @@ public class ItemReg {
             new ConsumableItem(foodItem(FoodValues.COOKED_BILLHOOK_BASS_SLICE), false));
     public static final DeferredItem<Item> BILLHOOK_BASS_ROLL = ITEMS.register("billhook_bass_roll", registryName ->
             new ConsumableItem(foodItem(FoodValues.BILLHOOK_BASS_ROLL), false));
+    public static final DeferredItem<Item> COCOA_PUDDING = ITEMS.register("cocoa_pudding_bowl", registryName ->
+            new ConsumableItem(foodItem(FoodValues.COCOA_PUDDING).craftRemainder(Items.BOWL).stacksTo(16), true));
+    public static final DeferredItem<Item> COCOA_PUDDING_BLOCK_ITEM = ITEMS.register("cocoa_pudding_block",()->
+            new BlockItem(BlockReg.COCOA_PUDDING_BLOCK.get(), basicItem().stacksTo(1)));
 }
 
 

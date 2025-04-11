@@ -67,5 +67,8 @@ public class FoodValues {
             .nutrition(3).saturationModifier(0.6f).build();
     public static final FoodProperties BILLHOOK_BASS_ROLL = (new FoodProperties.Builder())
             .nutrition(7).saturationModifier(0.6f).build();
+    public static final FoodProperties COCOA_PUDDING = (new FoodProperties.Builder())
+            .nutrition(6).saturationModifier(0.8f)
+            .effect(() -> new MobEffectInstance(ModEffects.COMFORT, SHORT_DURATION, 0), 1.0F).build();
 }
 
